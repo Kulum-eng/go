@@ -1,13 +1,12 @@
 package controllers
 
 import (
-	"membership/application"
-	"membership/domain"
+	"api/src/membership/application"
+	"api/src/membership/domain"
 	"net/http"
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-
 )
 
 type MembershipController struct {
@@ -41,7 +40,7 @@ func (c *MembershipController) CreateMembership(ctx *gin.Context) {
 
 func (c *MembershipController) GetMembership(ctx *gin.Context) {
 	id, _ := strconv.Atoi(ctx.Param("id"))
-	membership, err := get.ExecuteByID(id)
+	membership, err := c.getU.ExecuteByID(id)
 	if err != nil {
 		ctx.JSON(http.StatusNotFound, gin.H{"error": err.Error()})
 		return
@@ -50,7 +49,7 @@ func (c *MembershipController) GetMembership(ctx *gin.Context) {
 }
 
 func (c *MembershipController) GetAllMemberships(ctx *gin.Context) {
-	memberships, err := get.ExecuteAll()
+	memberships, err := c.getU.ExecuteAll()
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return

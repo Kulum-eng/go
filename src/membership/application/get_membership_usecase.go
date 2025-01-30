@@ -1,8 +1,8 @@
 package application
 
 import (
-	"membership/domain"
-	"membership/domain/ports"
+	"api/src/membership/domain"
+	"api/src/membership/domain/ports"
 )
 
 type GetMembershipUseCase struct {

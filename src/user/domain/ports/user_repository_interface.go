@@ -1,6 +1,6 @@
 package ports
 
-import "user/domain"
+import "api/src/user/domain"
 
 type UserRepository interface {
 	CreateUser(user domain.User) error

@@ -1,8 +1,7 @@
 package application
 
 import (
-	"user/domain/ports"
-
+	"api/src/user/domain/ports"
 )
 
 type DeleteUserUseCase struct {

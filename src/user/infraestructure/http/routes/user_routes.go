@@ -1,10 +1,9 @@
 package routes
 
 import (
-	"user/infrastructure/http/controllers"
+	"api/src/user/infraestructure/http/controllers"
 
 	"github.com/gin-gonic/gin"
-
 )
 
 func SetupUserRoutes(router *gin.Engine, controller *controllers.UserController) {

@@ -1,10 +1,9 @@
 package adapters
 
 import (
-	"association/domain"
-	"association/domain/ports"
+	"api/src/association/domain"
+	"api/src/association/domain/ports"
 	"database/sql"
-
 )
 
 type RepositoryImpl struct {

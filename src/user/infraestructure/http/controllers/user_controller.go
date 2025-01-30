@@ -1,13 +1,13 @@
 package controllers
 
 import (
+	"api/src/user/application"
+	"api/src/user/domain"
+	"api/src/user/infraestructure/http/responses"
+
 	"net/http"
-	"user/application"
-	"user/domain"
-	"user/infrastructure/http/responses"
 
 	"github.com/gin-gonic/gin"
-
 )
 
 type UserController struct {

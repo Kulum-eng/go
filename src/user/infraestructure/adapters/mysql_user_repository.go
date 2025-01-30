@@ -1,17 +1,15 @@
 package adapters
 
 import (
+	"api/src/user/domain"
 	"database/sql"
-	"user/domain"
-	"user/domain/ports"
-
 )
 
 type MySQLUserRepository struct {
 	DB *sql.DB
 }
 
-func NewMySQLUserRepository(db *sql.DB) ports.UserRepository {
+func NewMySQLUserRepository(db *sql.DB) *MySQLUserRepository {
 	return &MySQLUserRepository{DB: db}
 }
 

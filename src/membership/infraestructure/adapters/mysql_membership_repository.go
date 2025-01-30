@@ -1,11 +1,10 @@
 package adapters
 
 import (
+	"api/src/membership/domain"
+	"api/src/membership/domain/ports"
 	"database/sql"
 	"errors"
-	"membership/domain"
-	"membership/domain/ports"
-
 )
 
 type MySQLMembershipRepository struct {

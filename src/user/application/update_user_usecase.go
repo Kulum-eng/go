@@ -1,9 +1,8 @@
 package application
 
 import (
-	"user/domain"
-	"user/domain/ports"
-
+	"api/src/user/domain"
+	"api/src/user/domain/ports"
 )
 
 type UpdateUserUseCase struct {

@@ -1,10 +1,9 @@
 package routes
 
 import (
-	"membership/infrastructure/http/controllers"
+	"api/src/membership/infraestructure/http/controllers"
 
 	"github.com/gin-gonic/gin"
-
 )
 
 func RegisterMembershipRoutes(router *gin.Engine, controller *controllers.MembershipController) {

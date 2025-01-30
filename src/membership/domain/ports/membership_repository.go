@@ -1,6 +1,6 @@
 package ports
 
-import "membership/domain"
+import "api/src/membership/domain"
 
 type MembershipRepository interface {
 	CreateMembership(membership domain.Membership) error

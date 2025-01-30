@@ -1,6 +1,6 @@
 package responses
 
-import "membership/domain"
+import "api/src/membership/domain"
 
 type MembershipResponse struct {
 	ID            int    `json:"id"`

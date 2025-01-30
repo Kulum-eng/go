@@ -1,8 +1,7 @@
 package application
 
 import (
-	"membership/domain/ports"
-
+	"api/src/membership/domain/ports"
 )
 
 type DeleteMembershipUseCase struct {

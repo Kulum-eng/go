@@ -1,13 +1,13 @@
 package controllers
 
 import (
-	"association/application"
-	"association/domain"
-	"association/infrastructure/http/responses"
+	"api/src/association/application"
+	"api/src/association/domain"
+	"api/src/association/infraestructure/http/responses"
+
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-
 )
 
 type Controller struct {

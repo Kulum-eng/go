@@ -1,9 +1,8 @@
 package application
 
 import (
-	"association/domain"
-	"association/domain/ports"
-
+	"api/src/association/domain"
+	"api/src/association/domain/ports"
 )
 
 type CreateUseCase struct {
