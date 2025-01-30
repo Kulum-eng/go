@@ -1,6 +1,6 @@
 package ports
 
-import "association/domain"
+import "api/src/association/domain"
 
 type AssociationRepository interface {
 	Create(association domain.Association) error

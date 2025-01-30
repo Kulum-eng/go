@@ -1,7 +1,8 @@
 package adapters
 
 import (
-	"association/domain"
+	"api/src/association/domain"
+
 	"gorm.io/gorm"
 )
 

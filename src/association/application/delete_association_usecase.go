@@ -1,12 +1,14 @@
 package application
 
-import "association/domain"
+import (
+	"api/src/association/domain/ports"
+)
 
 type DeleteAssociationUseCase struct {
-	repo domain.AssociationRepository
+	repo ports.AssociationRepository
 }
 
-func NewDeleteAssociationUseCase(repo domain.AssociationRepository) *DeleteAssociationUseCase {
+func NewDeleteAssociationUseCase(repo ports.AssociationRepository) *DeleteAssociationUseCase {
 	return &DeleteAssociationUseCase{repo: repo}
 }
 

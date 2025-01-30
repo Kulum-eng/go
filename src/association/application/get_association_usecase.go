@@ -1,12 +1,15 @@
 package application
 
-import "association/domain"
+import (
+	"api/src/association/domain"
+	"api/src/association/domain/ports"
+)
 
 type GetAssociationUseCase struct {
-	repo domain.AssociationRepository
+	repo ports.AssociationRepository
 }
 
-func NewGetAssociationUseCase(repo domain.AssociationRepository) *GetAssociationUseCase {
+func NewGetAssociationUseCase(repo ports.AssociationRepository) *GetAssociationUseCase {
 	return &GetAssociationUseCase{repo: repo}
 }
 

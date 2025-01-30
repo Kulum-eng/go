@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"association/infrastructure/http/controllers"
+	"api/src/association/infraestructure/http/controllers"
 
 	"github.com/gin-gonic/gin"
 )
@@ -10,9 +10,9 @@ func SetupRoutes(router *gin.Engine, controller *controllers.AssociationControll
 	association := router.Group("/associations")
 	{
 		association.POST("/", controller.Create)
-		association.GET("/", controller.GetAll)
+		/* association.GET("/", controller.GetAll)
 		association.GET("/:id", controller.GetByID)
 		association.PUT("/:id", controller.Update)
-		association.DELETE("/:id", controller.Delete)
+		association.DELETE("/:id", controller.Delete) */
 	}
 }
