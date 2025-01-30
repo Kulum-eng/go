@@ -1,9 +1,10 @@
 package controllers
 
 import (
-	"membership/application"
-	"membership/domain"
-	"membership/infrastructure/http/responses"
+	"api/src/membership/application"
+	"api/src/membership/domain"
+	"api/src/user/infraestructure/http/responses"
+
 	"net/http"
 
 	"github.com/gin-gonic/gin"
